@@ -10,10 +10,9 @@ import javax.management.*;
 import java.math.BigDecimal;
 import java.util.*;
 
+//System.out.println("GCE testing");
 @RestController
-public class GreetingController {
-
-    
+public class GreetingController { 
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
     public static Map<BadKey,String> leakMap = new HashMap<>();
