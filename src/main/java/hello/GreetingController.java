@@ -30,6 +30,7 @@ public class GreetingController {
 
     @RequestMapping(value = "/health")
     public void health() {
+        System.out.println("Test");
     }
     
     @RequestMapping(value = "/mbeans")
