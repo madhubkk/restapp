@@ -20,6 +20,7 @@ public class GreetingController {
     
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
+        System.out.println("Started Greeting method");
          for(int i =0;i<30;i++){
            leakMap.put(new BadKey("key"), "value");
          }
